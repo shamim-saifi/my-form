@@ -1,0 +1,50 @@
+
+.Login>h1{
+    font-size: 2vmax;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    transform: translateX(400vw);
+    animation: heading 1s ease-in-out forwards;
+    color: white;
+}
+.Login{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Img/formBg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.signUpText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-500vh);
+    animation: buttonAnima 1.5s ease-in-out forwards;
+}
+@media screen and (max-width:850px) {
+    input {
+        padding: 1.5vmax;
+        width: 35vmax;
+        font-size: 2.5vmax;
+    }
+
+    form>button {
+        padding: 1.2vmax;
+        width: 15vmax;
+        font-size: 2.5vmax;
+    }
+    .Login>h1{
+        font-size: 3.2vmax;
+       
+    }
+    
+    
+    
+}

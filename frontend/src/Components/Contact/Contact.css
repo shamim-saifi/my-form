@@ -1,0 +1,39 @@
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+    background-color: #3c0a5044;
+}
+.contact>h2{
+    font-family: "Roboto";
+    font-size: 3vmax;
+    font-weight: 500;
+    letter-spacing: 1.5vmax;
+}
+.contact>form>input{
+    color: #3c0a50e0;
+    border: 2px solid #3c0a50e0;
+    
+}
+.contact>form>input::placeholder {
+    color: rgba(83, 67, 67, 0.479);
+    opacity: 1;
+}
+.contact>form>button{
+    color: black;
+    border: 2px solid #3c0a50e0;
+    color: #3c0a50e0;
+}
+.contact>form>button:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: #3c0a50e0;;
+
+}

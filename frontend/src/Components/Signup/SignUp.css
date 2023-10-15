@@ -1,0 +1,172 @@
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../Img/formBg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-color: rgba(0, 0, 0, 0.884); */
+
+}
+
+.SignUp>h2 {
+    font-size: 2.5vmax;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    transform: translateX(400vw);
+    animation: heading 1s ease-in-out forwards;
+    color: white;
+}
+
+.SignUp>h3 {
+    font-size: 2vmax;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    color: white;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-400vw);
+    animation: formAnima 1.2s ease-in-out forwards;
+}
+
+input {
+    padding: 1vmax;
+    margin: .5vmax 0; 
+    width: 25vmax;
+    font-family: 'Roboto';
+    font-size: 1.2vmax;
+    outline: none;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder {
+    color: tomato;
+    opacity: 1;
+}
+
+form>button {
+    padding: 1vmax;
+    margin: .5vmax 0;
+    width: 15vmax;
+    font-family: 'Roboto';
+    font-size: 1.7vmax;
+    border: 2px solid tomato;
+    color: tomato;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+form>button:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: tomato;
+
+}
+
+form>select {
+    width: 100%;
+    padding: 1vmax;
+    font-size: 1.3vmax;
+    font-family: 'Roboto';
+    margin: .2vmax 0;
+    outline: none;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    background-color: transparent;
+    color: tomato;
+
+}
+
+form>select>option {
+    color: white;
+    background-color: rgb(199, 150, 141);
+}
+
+form>input[type="file"] {
+    color: tomato;
+
+
+}
+
+::-webkit-file-upload-button {
+    background-color: rgb(28 66 85);
+    color: white;
+    width: 15vmax;
+    border: 1px solid rgb(28 66 85);
+    border-radius: 10px;
+    font-size: 2vmax;
+    font-family: "Roboto";
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* ::-webkit-calendar-picker-indicator {
+    background-color: tomato;
+    border-radius: 10px;
+    font-size: 2vmax;
+} */
+
+.loginText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    transform: translateY(-500vh);
+    animation: buttonAnima 1.5s ease-in-out forwards;
+}
+
+.loginText>a {
+
+    color: white;
+}
+
+@keyframes formAnima {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:850px) {
+    input {
+        padding: 1.5vmax;
+        width: 35vmax;
+        font-size: 2.5vmax;
+    }
+
+    form>button {
+        padding: 1.2vmax;
+        width: 15vmax;
+        font-size: 2.5vmax;
+    }
+    .SignUp>h2 {
+        font-size: 3.2vmax;
+       
+    }
+    
+    .SignUp>h3 {
+        font-size: 2.5vmax;
+        
+    
+    }
+    
+}
