@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 export const Context = createContext({})
 
-export const server='http://localhost:1000/api'
+export const server='api'
 
 const AppWapper = () => {
 
